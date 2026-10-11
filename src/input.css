@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+    --color-gelo: #dfe6f1;
+    --color-cinza: #d7d7d9;
+    --color-areia: #f2e4cf;
+    --color-petroleo: #0a636b;
+    --color-marinho: #091b48;
+}
+
+/* Remove as setinhas dos inputs de número */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}

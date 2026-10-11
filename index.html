@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Calculadora de medias</title>
+</head>
+<body class="bg-gelo text-marinho">
+    <section class="h-[50vh] w-full flex max-[600px]:flex-col max-[600px]:h-auto">
+        <div class="w-1/2 bg-areia p-8 max-[600px]:w-full">
+            <h1 class="text-3xl font-bold">Notas</h1>
+
+            <div class="grid grid-cols-5 gap-3 my-6">
+                <input type="number" class="nota bg-white border-2 border-cinza p-2 rounded-lg text-center outline-none focus:border-petroleo" min="0" max="10" step="0.1">
+                <input type="number" class="nota bg-white border-2 border-cinza p-2 rounded-lg text-center outline-none focus:border-petroleo" min="0" max="10" step="0.1">
+                <input type="number" class="nota bg-white border-2 border-cinza p-2 rounded-lg text-center outline-none focus:border-petroleo" min="0" max="10" step="0.1">
+                <input type="number" class="nota bg-white border-2 border-cinza p-2 rounded-lg text-center outline-none focus:border-petroleo" min="0" max="10" step="0.1">
+                <input type="number" class="nota bg-white border-2 border-cinza p-2 rounded-lg text-center outline-none focus:border-petroleo" min="0" max="10" step="0.1">
+                <input type="number" class="nota bg-white border-2 border-cinza p-2 rounded-lg text-center outline-none focus:border-petroleo" min="0" max="10" step="0.1">
+                <input type="number" class="nota bg-white border-2 border-cinza p-2 rounded-lg text-center outline-none focus:border-petroleo" min="0" max="10" step="0.1">
+                <input type="number" class="nota bg-white border-2 border-cinza p-2 rounded-lg text-center outline-none focus:border-petroleo" min="0" max="10" step="0.1">
+                <input type="number" class="nota bg-white border-2 border-cinza p-2 rounded-lg text-center outline-none focus:border-petroleo" min="0" max="10" step="0.1">
+                <input type="number" class="nota bg-white border-2 border-cinza p-2 rounded-lg text-center outline-none focus:border-petroleo" min="0" max="10" step="0.1">
+            </div>
+
+            <button id="salvar" class="bg-petroleo text-areia font-semibold px-6 py-2 rounded-lg cursor-pointer hover:bg-marinho">Salvar notas</button>
+        </div>
+        <div class="w-1/2 bg-marinho text-gelo p-8 max-[600px]:w-full flex flex-col items-center justify-center text-center">
+            <h1 class="text-3xl font-bold">Média</h1>
+
+            <p id="media" class="text-6xl font-bold my-6">-</p>
+            <p id="resultado" class="text-2xl font-semibold"></p>
+        </div>
+    </section>
+
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
